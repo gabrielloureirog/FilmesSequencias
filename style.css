@@ -1,0 +1,184 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: #f0f0f0; */
+
+    background-image: url("imagens/galaxias/galaxia_02.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes movimentoFundo {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 900px;
+}
+
+.busca {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.busca input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.busca button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 250px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Preto semi-transparente com 70% de opacidade */
+    display: flex;
+    flex-direction: column;
+}
+
+.card .info .personagens {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card img {
+    width: 100%;
+    height: 65%;
+    /* A imagem agora ocupa 70% da altura */
+    object-fit: cover;
+}
+
+.card .info {
+    height: 30%;
+    /* A info ocupa os 30% restantes */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.card .info h2 {
+    color: #90c53f;
+    font-size: 1.1rem;
+    margin: 0;
+    flex-grow: 1;
+    /* Permite o título ocupar o espaço disponível */
+    display: flex;
+    align-items: center;
+    /* Centraliza verticalmente o texto */
+}
+
+.card .info button {
+    background-color: #466e09;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    /* O botão ocupará toda a largura */
+    text-align: center;
+    margin-top: 5px;
+    /* Espaço entre o título e o botão */
+}
+
+.card .info button:hover {
+    background-color: #7abf2e;
+    /* Cor ao passar o mouse */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.botoes-busca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.botoes-busca .busca {
+    margin-right: 10px;
+}
+
+#btn-limpar-filtros {
+    padding: 10px 15px; /* Aumentamos um pouco o padding horizontal */
+    background-color: #dc3545; /* Cor de fundo vermelha */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Arredondamos todas as bordas */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adicionamos uma transição suave na cor de fundo */
+}
+
+#btn-limpar-filtros:hover {
+    background-color: #c82333; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

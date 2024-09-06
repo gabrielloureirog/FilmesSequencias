@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes Alien - Projeto Gemini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="botoes-busca">
+            <select id="selecionar-sequencia">
+                <option value="dados-alien.js">Alien</option>
+                <option value="dados-harry-potter.js">Harry Potter</option>
+                <option value="dados-senhor-dos-aneis.js">Senhor dos Anéis</option>
+                <option value="dados-blade.js">Blade</option>
+            </select>
+            <div class="busca">
+                <input type="text" id="busca-titulo" placeholder="Buscar por titulo">
+                <button id="btn-busca-titulo" onclick="filtrarPorTitulo()">Buscar</button>
+            </div>
+            <div class="busca">
+                <input type="text" id="busca-personagem" placeholder="Buscar por personagem">
+                <button id="btn-busca-personagem" onclick="filtrarPorPersonagem()">Buscar</button>
+            </div>
+            <button class="busca" id="btn-limpar-filtros" style="display: none;" onclick="limparFiltros()">Limpar filtros</button>
+        </div>
+
+        <div id="container-cards"></div>
+    </div>
+
+    <!-- Region de dados -->
+    <script src="dados-alien.js"></script>
+
+    <!-- Region de funções -->
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-titulo"></h2>
+        <p id="modal-descricao"></p>
+    </div>
+</div>

@@ -4,6 +4,7 @@
   O projeto utiliza HTML, CSS e JavaScript para criar uma interface dinâmica e responsiva.
 
   *** Objetivo do projeto é seguir os padrões abordados pela imersão em Gemini + Alura. ***
+  https://gabrielloureirog.github.io/FilmesSequencias/
 
 🚀 Funcionalidades
 

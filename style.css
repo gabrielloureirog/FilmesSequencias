@@ -9,6 +9,7 @@ body {
     background-image: url("imagens/galaxias/galaxia_02.gif");
     background-size: cover;
     background-repeat: no-repeat;
+    flex-direction: column; /* Alinha os elementos verticalmente */
 }
 
 @keyframes movimentoFundo {
@@ -22,6 +23,7 @@ body {
 }
 
 .container {
+    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,4 +183,42 @@ body {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+footer {
+    background-color: #343a40; /* Fundo cinza escuro */
+    color: #fff; /* Texto branco */
+    padding: 15px 0; /* Ajusta o padding vertical */
+    text-align: center;
+    margin-top: 15px;
+    /* Aumentar o tamanho em horizontal */
+    width: 25%;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.footer-content { /* Novo estilo para agrupar o texto e os ícones */
+    display: flex;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 20px;
+    margin-right: 20px; /* Adiciona um espaçamento à direita do texto */
+    margin-left: 20px; /* Adiciona um espaçamento à esquerda do texto */
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 5px; /* Reduzimos o espaçamento entre os ícones */
+}
+
+.social-links a img { /* Adicionamos estilo para as imagens dentro dos links */
+    width: 35px; /* Ajusta o tamanho das imagens conforme necessário */
+    height: 35px;
+    vertical-align: middle; /* Alinha verticalmente as imagens ao meio do texto */
 }

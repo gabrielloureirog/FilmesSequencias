@@ -5,6 +5,7 @@
 
   *** Objetivo do projeto é seguir os padrões abordados pela imersão em Gemini + Alura. ***
   https://gabrielloureirog.github.io/FilmesSequencias/
+  https://filmes-sequencias.vercel.app/
 
 🚀 Funcionalidades
 
